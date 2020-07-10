@@ -3,3 +3,8 @@ FROM ubuntu:20.10
 
 # Informa o Mantenedor dessa imagem:
 MAINTAINER Renan Rossi <renan.rossi@outlook.com>
+
+# Atualiza a imagem e instala aplicações:
+RUN apt-get update && \
+    apt-get upgrade -y && \
+    apt-get install -y rsync lsof iputils-ping nano systemctl
