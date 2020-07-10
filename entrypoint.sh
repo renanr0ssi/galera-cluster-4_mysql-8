@@ -14,7 +14,7 @@ tempSqlFile='/tmp/mysql-first-time.sql'
 if [ ! -d "/var/lib/mysql/mysql" ]; then
 	
 	echo 'Running mysql_install_db ...'
-	mysql_install_db --datadir=/var/lib/mysql
+	mysqld --initialize
 	echo 'Finished mysql_install_db'
 	
 	# These statements _must_ be on individual lines, and _must_ end with
