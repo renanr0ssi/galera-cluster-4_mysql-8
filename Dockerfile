@@ -1,4 +1,6 @@
+#Baixar imagem de SQL Server 2019 com Ubuntu
 FROM ubuntu:20.10
+
 MAINTAINER Renan Rossi <renan.rossi@outlook.com>
 
 ENV VERSION 20200710
