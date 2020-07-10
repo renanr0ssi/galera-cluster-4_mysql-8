@@ -14,7 +14,6 @@ RUN apt-get update && \
 COPY my.cnf /etc/mysql/my.cnf
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod 700 /entrypoint.sh
-EXPOSE 3306/tcp
-ENTRYPOINT ["/entrypoint.sh"]
+EXPOSE 3306 4444 4567 4568
 
 LABEL mysql_version=8.0
