@@ -1,6 +1,6 @@
-#Criar uma imagem do zero de Galera Cluster 4 com MySql 8.0 em Ubuntu 20.10:
+# Criar uma imagem do zero de Galera Cluster 4 com MySql 8.0 em Ubuntu 20.10:
 
-###PRÉ-REQS:
+### PRÉ-REQS:
 * Git
 * Docker 
 * Docker-Compose
