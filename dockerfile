@@ -10,7 +10,6 @@ RUN apt-get update && \
     apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 BC19DDBA && \
     apt-get update && \
     apt-get install -y galera-4 mysql-server-8.0  rsync lsof iputils-ping nano
-RUN rm -r /var/lib/mysql/
 
 COPY my.cnf /etc/mysql/my.cnf
 COPY entrypoint.sh /entrypoint.sh
