@@ -5,10 +5,11 @@ ENV VERSION 20200710
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && \
+    apt-get upgrade -y && \
     apt-get install -y  software-properties-common && \
     apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 BC19DDBA && \
     apt-get update && \
-    apt-get install -y galera-4 mysql-server-8.0
+    apt-get install -y galera-4 mysql-server-8.0 iputils-ping nano
 RUN rm -r /var/lib/mysql
 
 COPY my.cnf /etc/mysql/my.cnf
