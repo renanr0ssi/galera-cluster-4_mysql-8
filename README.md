@@ -7,7 +7,7 @@
 
 1. BAIXAR UMA IMAGEM DO UBUNTU:
 
-´´´
+```
 sudo docker pull ubuntu:20.10
-´´´
+```
 
