@@ -1,0 +1,5 @@
+# Baixar imagem de SQL Server 2019 com Ubuntu 20.10:
+FROM ubuntu:20.10
+
+# Informa o Mantenedor dessa imagem:
+MAINTAINER Renan Rossi <renan.rossi@outlook.com>
