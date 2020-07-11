@@ -23,4 +23,4 @@ RUN apt-get update
 RUN apt-get install -y galera-4
 
 # Instala o MySql Server 8 (incluso versão cluster):
-RUN apt-get install -y mysql-server
+# RUN apt-get install -y mysql-server
