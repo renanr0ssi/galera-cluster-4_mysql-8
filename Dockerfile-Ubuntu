@@ -4,8 +4,9 @@ FROM ubuntu:20.10
 # Informa o Mantenedor dessa imagem:
 MAINTAINER Renan Rossi <renan.rossi@outlook.com>
 
-# Atualiza a imagem e instala aplicações:
+# Atualiza a imagem e instala aplicações necessárias e o Galera 4:
 RUN apt-get update && \
     apt-get upgrade -y && \
-    apt-get install -y rsync lsof iputils-ping nano systemctl gnupg2 && \
+    apt-get install -y rsync lsof iputils-ping nano systemctl gnupg2 apt-utils && \
     apt-get remove --assume-yes --purge apparmor
+RUN apt-get install -y galera-4    
