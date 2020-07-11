@@ -1,0 +1,17 @@
+# Baixar imagem de SQL Server 2019 com Ubuntu 20.10:
+FROM ubuntu:18.04
+
+# Informa o Mantenedor dessa imagem:
+MAINTAINER Renan Rossi <renan.rossi@outlook.com>
+
+# Atualiza a imagem e instala aplicações necessárias e o Galera 4:
+RUN apt-get update && \
+    apt-get upgrade -y && \
+    apt-get install -y rsync lsof iputils-ping nano systemctl gnupg2 apt-utils && \
+    apt-get remove --assume-yes --purge apparmor
+    
+# Instala o Galera Cluster 4:
+RUN apt-get install -y galera-4
+
+# Instala o MySql Server 8 (incluso versão cluster):
+RUN apt-get install mysql-server
