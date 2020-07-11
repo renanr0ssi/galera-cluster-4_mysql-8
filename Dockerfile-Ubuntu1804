@@ -1,10 +1,10 @@
-# Baixar imagem de SQL Server 2019 com Ubuntu 20.10:
+# Baixar imagem do Ubuntu 18.04:
 FROM ubuntu:18.04
 
 # Informa o Mantenedor dessa imagem:
 MAINTAINER Renan Rossi <renan.rossi@outlook.com>
 
-# Atualiza a imagem e instala aplicações necessárias e o Galera 4:
+# Atualiza a imagem e instala aplicações necessárias:
 RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y rsync lsof iputils-ping nano gnupg2 apt-utils && \
